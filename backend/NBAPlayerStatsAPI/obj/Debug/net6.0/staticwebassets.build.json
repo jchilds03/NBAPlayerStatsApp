@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "nbQvUVuZsCrHbG4VHgp0JGwvn10VMtWC4UJ0WMs953I=",
+  "Source": "NBAPlayerStatsAPI",
+  "BasePath": "_content/NBAPlayerStatsAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
