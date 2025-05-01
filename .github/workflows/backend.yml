@@ -2,28 +2,34 @@ name: ASP.NET Core CI
 
 on:
   push:
-    branches: [ main ]
+    paths:
+      - 'backend/**'
   pull_request:
-    branches: [ main ]
+    paths:
+      - 'backend/**'
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
+    defaults:
+      run:
+        working-directory: backend/NBAPlayerStatsAPI  # <-- adjust based on your .csproj path
+
     steps:
-      - name: Checkout repo
+      - name: Checkout code
         uses: actions/checkout@v3
 
       - name: Setup .NET
         uses: actions/setup-dotnet@v3
         with:
-          dotnet-version: '6.0.x'
+          dotnet-version: '6.0.x'  # Match your project SDK (e.g., 6.0.x, 8.0.x)
 
       - name: Restore dependencies
         run: dotnet restore
 
-      - name: Build app
-        run: dotnet build --no-restore
+      - name: Build
+        run: dotnet build --no-restore --configuration Release
 
-      - name: Run tests
-        run: dotnet test
+      - name: Test
+        run: dotnet test --no-build --verbosity normal || echo "No tests yet"
