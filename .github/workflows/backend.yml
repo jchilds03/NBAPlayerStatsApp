@@ -26,10 +26,10 @@ jobs:
           dotnet-version: '6.0.x'  # Match your project SDK (e.g., 6.0.x, 8.0.x)
 
       - name: Restore dependencies
-        run: dotnet restore
+        run: dotnet restore backend/NBAPlayerStatsAPI/NBAPlayerStatsApp.sln
 
       - name: Build
-        run: dotnet build backend/NBAPlayerStatsApp.sln --no-restore --configuration Release
+        run: dotnet build backend/NBAPlayerStatsAPI/NBAPlayerStatsApp.sln --no-restore --configuration Release
 
       - name: Test
-        run: dotnet test backend/NBAPlayerStatsApp.sln --no-build --verbosity normal || echo "No tests yet"
+        run: dotnet test backend/NBAPlayerStatsTests/NBAPlayerStatsTests.csproj --no-build --verbosity normal || echo "No tests yet"
