@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "35WSP2NCAXC5bIr1xUxrgl30GuUHF+c7ElGlfooBzUbZp15rJf6MURyZ2jMIByrcnNgiXFr3S+7pzFS9/0gpPg==",
+  "success": true,
+  "projectFilePath": "/Users/jordanchilds/Projects/NBAPlayerStatsApp/backend/NBAPlayerStatsAPI/NBAPlayerStatsAPI.csproj",
+  "expectedPackageFiles": [
+    "/Users/jordanchilds/.nuget/packages/microsoft.aspnetcore.app.ref/6.0.31/microsoft.aspnetcore.app.ref.6.0.31.nupkg.sha512",
+    "/Users/jordanchilds/.nuget/packages/microsoft.netcore.app.host.osx-x64/6.0.31/microsoft.netcore.app.host.osx-x64.6.0.31.nupkg.sha512",
+    "/Users/jordanchilds/.nuget/packages/microsoft.netcore.app.ref/6.0.31/microsoft.netcore.app.ref.6.0.31.nupkg.sha512"
+  ],
+  "logs": []
+}
